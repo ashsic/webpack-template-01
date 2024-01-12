@@ -18,6 +18,10 @@ paste the following:
     "eslint.validate": ["javascript"]
 }
 
+in .eslinrc.json:
+
+add to end of extends array: "prettier"
+
 node --eval "fs.writeFileSync('.prettierrc','{}\n')"
 
 check with: npx eslint-config-prettier dist/main.js
